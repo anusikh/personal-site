@@ -1,0 +1,35 @@
+.Landing__Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  color: rgba(255, 255, 255, 0.833);
+}
+
+.Landing__Header {
+  background: linear-gradient(to right, #7712cf 30%, #cf1512 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 6.25rem;
+  font-weight: 600;
+}
+
+.Landing__Socials > * {
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+.Landing__Socials > *:hover {
+  opacity: 49%;
+}
+
+.Landing__Routes {
+  display: flex;
+}
+
+.Landing__Routes > button {
+  margin: 1rem 0.5rem 0 0.5rem;
+  border: none;
+  border-radius: 1rem;
+}

@@ -1,0 +1,22 @@
+.BlogCard__Container {
+  cursor: pointer;
+  width: auto;
+  color: rgba(255, 255, 255, 0.833);
+  height: 10rem;
+  margin: 1rem 0.5rem 0 0.5rem;
+  padding: 1rem;
+  background-color: rgba(50, 50, 50, 0.975);
+  box-shadow: 0 0 3px rgba(46, 45, 45, 0.619);
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.BlogCard__Container:hover {
+  transform: scale(1.03);
+}
+
+.BlogCard__Footer {
+  text-align: right;
+}

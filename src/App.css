@@ -1,0 +1,31 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #242424;
+  --text-color: rgba(255, 255, 255, 0.833);
+  --button-color: #3a3a3a;
+  --subtitle-color: #9b9b9b;
+}
+
+body {
+  margin: 0;
+}
+
+span {
+  color: var(--text-color);
+  font-weight: 300;
+}
+
+button {
+  background-color: transparent;
+  color: var(--text-color);
+  font-size: 0.8rem;
+  width: 3.2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  opacity: 49%;
+}
