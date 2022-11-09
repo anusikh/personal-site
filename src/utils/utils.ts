@@ -9,6 +9,7 @@ import React from "react";
 import db from "../firebase";
 
 export type BlogType = {
+  id: string;
   heading: string;
   body: string;
   date: {
@@ -27,6 +28,7 @@ export const getBlogs = async () => {
   querySnapshot.forEach((doc) => {
     const { heading, body, date } = doc.data();
     res.push({
+      id: doc.id,
       heading,
       body,
       date,

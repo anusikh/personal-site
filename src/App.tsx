@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Blog from "./components/Blogs/Blog";
+import BlogPage from "./components/Blogs/BlogPage";
 import Landing from "./components/Landing/Landing";
 
 const router = createBrowserRouter([
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/work",
     element: <>work</>,
+  },
+  {
+    path: "/blog/:id",
+    element: <BlogPage />,
   },
 ]);
 

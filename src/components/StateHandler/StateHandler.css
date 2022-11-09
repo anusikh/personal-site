@@ -1,0 +1,19 @@
+.StateHandler__Container {
+  border-top: 2px solid white;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 46vw;
+  top: 40vh;
+  border-radius: 50%;
+  animation: rotate 1.4s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

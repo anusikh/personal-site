@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   height: 95vh;
-  color: rgba(255, 255, 255, 0.833);
 }
 
 .Landing__Header {
@@ -16,8 +15,9 @@
   font-weight: 600;
 }
 
-.Landing__Socials > * {
+.Landing__Socials > a {
   margin: 0 0.5rem 0 0.5rem;
+  color: rgba(255, 255, 255, 0.833);
 }
 
 .Landing__Socials > *:hover {
