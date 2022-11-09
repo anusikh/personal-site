@@ -23,6 +23,7 @@ const BlogPage = () => {
             return !inline && match ? (
               <SyntaxHighlighter
                 children={String(children).replace(/\n$/, "")}
+                // @ts-ignore
                 style={atomDark}
                 language={match[1]}
                 className="Blog__Markdown"
