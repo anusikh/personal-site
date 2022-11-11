@@ -9,7 +9,7 @@
 
 .AuthPage__Box {
   background-color: #3a3a3a;
-  width: 40rem;
+  width: 50vw;
   height: 20rem;
   border-radius: 1rem;
   box-shadow: 0 0 3px rgba(46, 45, 45, 0.619);
@@ -44,5 +44,6 @@
   border: none;
   display: flex;
   align-items: center;
+  width: 6rem;
   border-radius: 0.5rem;
 }

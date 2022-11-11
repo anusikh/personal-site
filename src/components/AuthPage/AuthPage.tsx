@@ -26,7 +26,6 @@ const AuthPage = () => {
         navigate("/editor");
       })
       .catch((error) => {
-        const errorCode = error.code;
         alert(`😔 ${error.code} 😔`);
         setLoading(false);
         navigate("/auth");
@@ -56,7 +55,7 @@ const AuthPage = () => {
               className="AuthPage__Button"
               onClick={() => signIn(email, password)}
             >
-              log in
+              🔒 log in 🔒
             </button>
           </div>
         </div>
