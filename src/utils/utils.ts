@@ -1,11 +1,4 @@
-import {
-  collection,
-  getDocs,
-  onSnapshot,
-  orderBy,
-  query,
-} from "firebase/firestore";
-import React from "react";
+import { collection, getDocs, orderBy, query } from "firebase/firestore";
 import db from "../firebase";
 
 export type BlogType = {

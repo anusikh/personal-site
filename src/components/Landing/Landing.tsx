@@ -43,9 +43,9 @@ const Landing = () => {
       </div>
 
       <div className="Landing__Routes">
-        <button onClick={() => navigate("/blogs")}>blogs</button>
-        <button onClick={() => navigate("/work")}>work</button>
-        <button onClick={() => navigate("/blogs")}>resume</button>
+        <button onClick={() => navigate("/blogs")}>📕 blogs</button>
+        <button onClick={() => navigate("/work")}>⚒️ work</button>
+        <button onClick={() => navigate("/blogs")}>📃 resume</button>
       </div>
     </div>
   );

@@ -1,8 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
+import AuthPage from "./components/AuthPage/AuthPage";
 import Blog from "./components/Blogs/Blog";
 import BlogPage from "./components/Blogs/BlogPage";
+import Editor from "./components/Editor/Editor";
 import Landing from "./components/Landing/Landing";
+import { DataContextProvider } from "./context/data-context";
 
 const router = createBrowserRouter([
   {
@@ -21,13 +24,23 @@ const router = createBrowserRouter([
     path: "/blog/:id",
     element: <BlogPage />,
   },
+  {
+    path: "/auth",
+    element: <AuthPage />,
+  },
+  {
+    path: "/editor",
+    element: <Editor />,
+  },
 ]);
 
 function App() {
   return (
-    <div className="App__Container">
-      <RouterProvider router={router} />
-    </div>
+    <DataContextProvider>
+      <div className="App__Container">
+        <RouterProvider router={router} />
+      </div>
+    </DataContextProvider>
   );
 }
 
