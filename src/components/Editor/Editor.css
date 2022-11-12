@@ -1,0 +1,49 @@
+.Editor__Container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.Editor__InputContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 5rem 0 5rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: #3a3a3a;
+  box-shadow: 0 0 3px rgba(46, 45, 45, 0.619);
+}
+
+.Editor__InputContainer > textarea {
+  margin: 0.3rem 0 1rem 0;
+  padding: 0.5rem;
+  resize: none;
+  border-radius: 0.5rem;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.833);
+}
+
+.Editor__InputContainer > :nth-child(2) {
+  height: 15rem;
+}
+
+.Editor__Button {
+  background-color: rgba(255, 255, 255, 0.833);
+  width: 4rem;
+  color: black;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.Editor__List {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 5rem 0 5rem;
+  border-radius: 0.5rem;
+  background-color: #3a3a3a;
+  padding: 2rem;
+  box-shadow: 0 0 3px rgba(46, 45, 45, 0.619);
+}
+
+.Editor__List > span {
+  margin: 0 0 1rem 0;
+}

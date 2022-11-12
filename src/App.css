@@ -9,6 +9,7 @@
 body {
   margin: 0;
   color: var(--text-color);
+  overflow-x: hidden;
 }
 
 span {

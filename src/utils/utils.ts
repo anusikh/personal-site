@@ -1,4 +1,13 @@
-import { collection, getDocs, orderBy, query } from "firebase/firestore";
+import {
+  addDoc,
+  collection,
+  deleteDoc,
+  doc,
+  getDocs,
+  orderBy,
+  query,
+  setDoc,
+} from "firebase/firestore";
 import db from "../firebase";
 
 export type BlogType = {
@@ -29,4 +38,16 @@ export const getBlogs = async () => {
   });
 
   return res;
+};
+
+export const addBlog = async (blogHeading: string, blogBody: string) => {
+  addDoc(collection(db, "blogs"), {
+    heading: blogHeading,
+    body: blogBody,
+    date: new Date(),
+  }).catch((err: any) => console.error(err));
+};
+
+export const deleteBlog = async (id: string) => {
+  await deleteDoc(doc(db, "blogs", id));
 };

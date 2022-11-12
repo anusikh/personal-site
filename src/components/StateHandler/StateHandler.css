@@ -1,10 +1,18 @@
-.StateHandler__Container {
+.StateHandler__lContainer {
   border-top: 2px solid white;
   width: 100px;
   height: 100px;
   position: absolute;
   left: 46vw;
   top: 40vh;
+  border-radius: 50%;
+  animation: rotate 1.4s linear infinite;
+}
+
+.StateHandler__sContainer {
+  border-top: 2px solid white;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   animation: rotate 1.4s linear infinite;
 }

@@ -1,0 +1,18 @@
+.ListItem__Container {
+  background-color: rgb(99, 98, 98);
+  height: 3rem;
+  border-radius: 0.5rem;
+  padding: 0.4rem;
+  margin: 0.3rem 0 0.3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ListItem__ActionButtons {
+  display: flex;
+}
+
+.ListItem__ActionButtons > button {
+  border: none;
+}

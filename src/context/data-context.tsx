@@ -3,11 +3,13 @@ import { BlogType } from "../utils/utils";
 
 type initialStateType = {
   data: BlogType[];
+  selectedItem: string;
   authenticated: boolean;
 };
 
 const initialState: initialStateType = {
   data: [],
+  selectedItem: "",
   authenticated: false,
 };
 
@@ -18,6 +20,15 @@ export const DataContextProvider = (props: any) => {
     if (action.type === "add") return { ...state, data: action.payload };
     else return state;
   }, initialState.data);
+
+  const [selectedItem, selectDispatch] = React.useReducer(
+    (state: any, action: any) => {
+      if (action.type === "set-item")
+        return { ...state, selectedItem: action.payload };
+      else return state;
+    },
+    initialState.selectedItem
+  );
 
   const [authenticated, authDispatch] = React.useReducer(
     (state: any, action: any) => {
@@ -30,7 +41,14 @@ export const DataContextProvider = (props: any) => {
 
   return (
     <dataContext.Provider
-      value={{ data, authenticated, dataDispatch, authDispatch }}
+      value={{
+        data,
+        authenticated,
+        selectedItem,
+        dataDispatch,
+        authDispatch,
+        selectDispatch,
+      }}
     >
       {props.children}
     </dataContext.Provider>

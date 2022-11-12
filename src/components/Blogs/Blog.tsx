@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { dataContext } from "../../context/data-context";
 import { toDateTime } from "../../utils/dateUtil";
 import { BlogType, getBlogs } from "../../utils/utils";
 import Header from "../Header/Header";
@@ -9,6 +10,7 @@ import BlogCard from "./BlogCard";
 
 const Blog = () => {
   const navigate = useNavigate();
+
   const [blogs, setBlogs] = React.useState<BlogType[]>();
 
   const getData = async () => {
@@ -42,7 +44,7 @@ const Blog = () => {
             })}
           </>
         ) : (
-          <StateHandler />
+          <StateHandler size={"l"} />
         )}
       </div>
     </div>

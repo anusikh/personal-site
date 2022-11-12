@@ -26,7 +26,7 @@ const AuthPage = () => {
         navigate("/editor");
       })
       .catch((error) => {
-        alert(`😔 ${error.code} 😔`);
+        alert(`😔 ${error.code}`);
         setLoading(false);
         navigate("/auth");
       });
@@ -35,7 +35,7 @@ const AuthPage = () => {
   return (
     <div className="AuthPage__Container">
       {loading ? (
-        <StateHandler />
+        <StateHandler size={"l"} />
       ) : (
         <div className="AuthPage__Box">
           <span className="AuthPage__BoxHeader">log in</span>
@@ -55,7 +55,7 @@ const AuthPage = () => {
               className="AuthPage__Button"
               onClick={() => signIn(email, password)}
             >
-              🔒 log in 🔒
+              🔒 log in
             </button>
           </div>
         </div>
