@@ -30,17 +30,15 @@ const Works = () => {
 
   return (
     <div className="Work__Container">
+      <Header heading="Work" />
       {loading === true ? (
         <StateHandler size={"l"} />
       ) : (
-        <>
-          <Header heading="Work" />
-          <div className="Work__ProjectList">
-            {pList.map((i) => (
-              <Project data={i} key={i.id} />
-            ))}
-          </div>
-        </>
+        <div className="Work__ProjectList">
+          {pList.map((i) => (
+            <Project data={i} key={i.id} />
+          ))}
+        </div>
       )}
     </div>
   );
