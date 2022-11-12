@@ -7,6 +7,9 @@ const Landing = () => {
 
   return (
     <div className="Landing__Container">
+      <div className="Landing__SignIn" onClick={() => navigate("/auth")}>
+        🔒
+      </div>
       <span className="Landing__Header">anusikh</span>
 
       <div className="Landing__Socials">

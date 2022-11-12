@@ -33,3 +33,9 @@
   border: none;
   border-radius: 1rem;
 }
+
+.Landing__SignIn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
