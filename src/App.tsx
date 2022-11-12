@@ -5,6 +5,7 @@ import Blog from "./components/Blogs/Blog";
 import BlogPage from "./components/Blogs/BlogPage";
 import Editor from "./components/Editor/Editor";
 import Landing from "./components/Landing/Landing";
+import Work from "./components/Work/Work";
 import { DataContextProvider } from "./context/data-context";
 
 const router = createBrowserRouter([
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/work",
-    element: <>work</>,
+    element: <Work />,
   },
   {
     path: "/blog/:id",

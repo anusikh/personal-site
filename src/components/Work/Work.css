@@ -1,0 +1,16 @@
+.Work__ProjectList {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  .Work__ProjectList {
+    grid-template-columns: 33.33% 33.33% 33.33%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .Work__ProjectList {
+    grid-template-columns: 100%;
+  }
+}
