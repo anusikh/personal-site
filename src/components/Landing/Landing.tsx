@@ -45,7 +45,15 @@ const Landing = () => {
       <div className="Landing__Routes">
         <button onClick={() => navigate("/blogs")}>📕 blogs</button>
         <button onClick={() => navigate("/work")}>⚒️ work</button>
-        <button onClick={() => navigate("/blogs")}>📃 resume</button>
+        <button
+          onClick={() =>
+            window.open(
+              "https://docs.google.com/document/d/1fycaYmkdnCg-hfxT3CnwtY0uFkuRAi9X/edit?usp=share_link&ouid=113502614299854266425&rtpof=true&sd=true"
+            )
+          }
+        >
+          📃 resume
+        </button>
       </div>
     </div>
   );
