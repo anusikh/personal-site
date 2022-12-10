@@ -6,10 +6,12 @@
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  overflow-y: scroll;
 }
 
-.Project__Header {
+.Project__image {
+  height: 4rem;
+  object-fit: cover;
 }
 
 .Project__Description {
